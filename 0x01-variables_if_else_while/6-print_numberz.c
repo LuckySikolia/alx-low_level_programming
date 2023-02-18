@@ -4,18 +4,18 @@
  * main- Entry point
  * @void: Null value
  *
- * Description: output single digit base 10
+ * Description: output single digit base 10 using putchar
  * Return: Zero value
  */
+
 
 int main(void)
 {
 	    int i;
-	    
 	    for (i = 0; i < 10; i++)
 	    {
-	        printf("%d", i);
+		    putchar(i + '0');
 	    }
-	    printf("\n");
+	    putchar('\n');
 	    return (0);
 }
