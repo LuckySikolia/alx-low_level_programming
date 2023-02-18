@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 /**
- * main -  program entry
+ * main - Check if a number.
+ * @void: Null value
  *
- * Description - the program is used to check if a number is negative or positive or zero
- *
- * Return - Always 0 (Success)
+ * Description: Print if a number is positive, negative or zero
+ * Return: Zero value
  */
 
 int main(void)
