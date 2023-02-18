@@ -4,19 +4,16 @@
  * main- Entry point
  * @void: Null value
  *
- * Description: output reverse lowercase alphabet
+ * Description: Print alphabet in reverse
  * Return: Zero value
  */
 
 int main(void)
 {
-	char alph  = 'z';
-	
-	while(alph >= 'a')
-	{
-		putchar(alph);
-		--alph;
-	}
-	putchar("\n");
+	char n;
+
+	for (n = 'z'; n >= 'a'; n--)
+		putchar(n);
+	putchar('\n');
 	return (0);
 }

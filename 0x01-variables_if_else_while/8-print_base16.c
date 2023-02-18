@@ -4,23 +4,19 @@
  * main- Entry point
  * @void: Null value
  *
- * Description: output single digit base 16 using putchar
+ * Description: Print numbers of base 16
  * Return: Zero value
  */
 
-
 int main(void)
 {
-	int i;
-	
-	for (i = 0; i < 10; i++)
-	{
-		putchar(i + '0');
-	}
-	for (i = 'a'; i <= 'f'; i++)
-	{
-		putchar(i);
-	}
-	putchar("\n");
+	char c;
+	int n;
+
+	for (n = '0'; n <= '9'; n++)
+		putchar(n);
+	for (c = 'a'; c <= 'f'; c++)
+		putchar(c);
+	putchar('\n');
 	return (0);
 }
