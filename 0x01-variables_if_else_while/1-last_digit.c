@@ -3,9 +3,11 @@
 #include <stdio.h>
 
 /**
- * main - program entry point
- * task - tondetermine the last number divide by ten
- * return - zero value if successful
+ * main - Entry point
+ * @void: Null value
+ *
+ * Description: Check the last digit of the number
+ * Return: Zero value to succesful
  */
 
 int main(void)
@@ -14,9 +16,9 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (num % 10 == 0)
+	if (n % 10 == 0)
 	{
-		printf("Last digit of %d and is 0\n", n, n % 10);
+		printf("Last digit of %d is %d and is 0\n", n, n % 10);
 	}
 	else if (n % 10 < 6)
 	{
