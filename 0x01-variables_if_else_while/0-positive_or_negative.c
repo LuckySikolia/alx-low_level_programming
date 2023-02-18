@@ -5,7 +5,7 @@
 /**
  * main -  program entry
  * description - used to check if a number is negative or positive or zero
- * return - gives a zero value when successful
+ * return - zero (success)
  */
 
 int main(void)
