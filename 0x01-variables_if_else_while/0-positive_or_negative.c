@@ -3,13 +3,15 @@
 #include <stdio.h>
 
 /**
- * main - used to check if a number is negative or positive or zero
+ * main -  program entry
+ * description - used to check if a number is negative or positive or zero
  * return gives a zero value if true
  */
 
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
@@ -25,5 +27,4 @@ int main(void)
 		printf("%d is zero\n", n);
 	}
 	return (0);
-
 }
