@@ -1,19 +1,20 @@
 #include "main.h"
 
 /**
-*main - function prints text as output
+*main - print _putchar followed by a new line
 *
-*Return:return 0
+*Return: Always 0 (Success)
 */
+
 int main(void)
 {
-	char school[10] = "_putchar";
+	char str[10] = "_putchar";
 
 	int i;
 
 	for (i = 0; i < 8; i++)
 	{
-		_putchar(school[i]);
+		_putchar(str[i]);
 	}
 	_putchar(10);
 	return (0);
