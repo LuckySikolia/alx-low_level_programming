@@ -3,6 +3,8 @@
 /**
 *print_last_digit - calculate the absolute value of an integer
 *
+* @n: the int to extract the last digit from
+*
 **Return: the value of the last digit
 **/
 
