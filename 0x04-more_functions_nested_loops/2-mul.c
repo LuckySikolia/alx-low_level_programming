@@ -12,8 +12,5 @@
 
 int mul(int a, int b)
 {
-	if ((a >= '0' && a <= '9') || (b >= '0' && b <= '9'))
-	{
-		a * b;
-	}
+	return (a * b);
 }
