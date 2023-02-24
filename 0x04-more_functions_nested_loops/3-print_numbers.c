@@ -3,17 +3,17 @@
 /**
  * print_numbers - prints 0123456789\n
  *
- *
  * Return: void
  */
 
+
 void print_numbers(void)
 {
-	char num;
+	char c;
 
-	for (num = '0'; num <= '9'; num)
+	for (c = '0'; c <= '9'; c++)
 	{
-		_putchar(num);
+		_putchar(c);
 	}
 	_putchar(10);
 }
