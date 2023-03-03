@@ -6,7 +6,7 @@
  * @src: string to be concatenated
  * 
  * Return: 0 always success
-*/
+ */
 
 char *_strcat(char *dest, char *src)
 {
