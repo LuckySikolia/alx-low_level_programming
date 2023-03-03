@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates two strings
+ * *_strcat - concatenates two strings
  * @dest: characters to be appended to
  * @src:  characters to append to dest
  * Return: Always 0
