@@ -2,8 +2,10 @@
 
 /**
  * _strcat - function that concatenates two strings
+ * @dest: string with concatenation
+ * @src: string to be concatenated
  * 
- * Return: resulting string
+ * Return: 0 always success
 */
 
 char *_strcat(char *dest, char *src)
