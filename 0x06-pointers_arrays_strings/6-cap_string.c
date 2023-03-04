@@ -8,24 +8,26 @@
 
 char *cap_string(char *str)
 {
-	int i = 0;
+	int i;
+	int j;
+	char c[] = {44, 59, 46, 33, 63, 34, 40, 41, 123, 125, 32, 10, 9};
+
+	i = 0;
 
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 97 && str[i] <= 122)
+		if (i == 0 && str[i] >= 97 && str[i] <= 122)
 		{
 			str[i] = str[i] - 32;
 		}
-
-		if (str[i] == 32 || str[i] == 9 || str[i] == 10 || str[i] == 44 ||
-				str[i] == 59 || str[i] == 46 || str[i] == 33 || str[i] == 63 ||
-				str[i] == 34 || str[i] == 40 || str[i] == 41 || str[i] == 123 ||
-				str[i] == 125)
+		j = 0;
+		while (c[j] != '\0')
 		{
-			if (str[i + 1] >= 97 && str[i + 1] <= 122)
+			if (c[j] == str[i] && (str[i + 1] >= 97 && str[i + 1] <= 122))
 			{
 				str[i + 1] = str[i + 1] - 32;
 			}
+			j++;
 		}
 		i++;
 	}
