@@ -1,72 +1,52 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-#include <stdbool.h>
-
 /**
- * coinConverter - Helper function that does all the mathematics
- * @i: Passed in variable from main for calculations
- * Return: The number of coins needed minimum for the passed in variable
- */
-int coinConverter(int i)
-{
-	int count = 0;
-
-	while (i != 0)
-	{
-		if (i % 10 == 9 || i % 10 == 7)
-			i -= 2;
-		else if (i % 25 == 0)
-			i -= 25;
-		else if (i % 10 == 0)
-			i -= 10;
-		else if (i % 5 == 0)
-			i -= 5;
-		else if (i % 2 == 0)
-		{
-			if (i % 10 == 6)
-				i -= 1;
-			else
-				i -= 2;
-		}
-		else
-			i -= 1;
-
-		count++;
-	}
-
-	return (count);
-}
-
-/**
- * main - Takes in exactly one argument for minimum coin count
- * @argc: Number of command line arguments
- * @argv: Array name
- * Return: 0 if exactly 1 argument is passed into this program, 1 otherwise
- */
+ * main - Program that prints the minimum number of coins to make
+ * change for an amount of money.
+ * @argc: count
+ * @argv: array
+ *
+ * Return: Always 0
+ **/
 int main(int argc, char *argv[])
 {
-	int i, coin;
+	int values[] = {25, 10, 5, 2, 1}, i, j, result = 0, n;
 
-	coin = 0;
-
-	if (argc != 2)
+	if (argc == 2)
+	{
+		n = atoi(argv[1]);
+		for (i = 0; i < 5; i++)
+		{
+			if (n < 0)
+			{
+				printf("0");
+				return (0);
+			}
+			if (n == 0)
+			{
+				printf("%d\n", result);
+				return (0);
+			}
+			if (values[i] <= n)
+			{
+				result += n / values[i];
+				n = abs(n - (values[i] * result));
+			}
+			for (j = 0; j < 5; j++)
+			{
+				if (n == values[j])
+				{
+					result += 1;
+					n = 0;
+				}
+			}
+		}
+		printf("%d\n", result);
+	} else
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	i = atoi(argv[1]);
-
-	if (i < 0)
-		printf("0\n");
-	else
-	{
-		coin = coinConverter(i);
-
-		printf("%d\n", coin);
-	}
-
 	return (0);
 }
