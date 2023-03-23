@@ -1,11 +1,10 @@
 #include "3-calc.h"
 
 /**
- * op_add - Adds two integers.
- * @a: The first int.
- * @b: The second int.
- *
- * Return: The sum
+ * op_add - adds two numbers
+ * @a: 1st Num
+ * @b: 2nd Num
+ * Return: result
  */
 
 int op_add(int a, int b)
@@ -14,11 +13,10 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - Subtracts 2 integers.
- * @a: First int.
- * @b: Second int.
- *
- * Return: The difference.
+ * op_sub - Subtracts two numbers
+ * @a: 1st Num
+ * @b: 2nd Num
+ * Return: result
  */
 
 int op_sub(int a, int b)
@@ -27,10 +25,10 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - Return the product of a and b.
- * @a: First int.
- * @b: Second int.
- * Return: Product
+ * op_mul - Multiplies two numbers
+ * @a: 1st Num
+ * @b: 2nd Num
+ * Return: result
  */
 
 int op_mul(int a, int b)
@@ -39,10 +37,10 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - Division of a and b.
- * @a: First int.
- * @b: Second int.
- * Return: div
+ * op_div - Divides  two number
+ * @a: 1st Num
+ * @b: 2nd Num
+ * Return: result
  */
 
 int op_div(int a, int b)
@@ -57,10 +55,10 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod -  Modulo two integers.
- * @a: First int.
- * @b: Second int.
- * Return: Remainder
+ * op_mod - Modules of two numbers
+ * @a: 1st Num
+ * @b: 2nd Num
+ * Return: result
  */
 
 int op_mod(int a, int b)
